@@ -1,0 +1,5 @@
+<ul id="comments">
+  {{#each comments}}
+  <li>{{comment}}</li>
+  {{/each}}
+</ul>
