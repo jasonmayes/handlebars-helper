@@ -1,11 +1,11 @@
 # handlebars-helper
-A lightweight helper component to make it super easy to use handlebars templates in a re-usable manner.
+A lightweight helper component to make it super easy to use handlebars templates in a re-usable manner across different pages.
 
 Instead of defining script tags inline in your HTML to define templates you can instead write "template files" which will be bought in using AJAX only when required.
 
 Even better, these are then cached in the JS layer so any subsequent calls do not result in further fetches.
 
-## Example...
+## Example... Before (without this helper)...
 
 Previously a handlebars template would look something like this:
 
@@ -32,6 +32,8 @@ And then some JavaScript to actually render it would be something like this:
   document.getElementById('outputHere').innerHTML = out;
 ```
 
+## Example... After (with this helper)...
+
 Using HandlebarsHelper, we can now simplify this to:
 
 ```html
@@ -53,10 +55,11 @@ And then some JavaScript to actually render it would be something like this:
 
 ## Advantages
 
-Enables easy reuse of templates across multiple files.
+1. Enables easy reuse of templates across multiple files.
+2. Keeps the HTML simpler and less "messy".
 
 ## Disadvantages
 
-Obviously requires one server side fetch for each template you create.
+1. Requires one server side fetch for each template file you create if you use it on a page.
 
 
